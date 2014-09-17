@@ -1,0 +1,43 @@
+<style>
+    .help-block{
+        color: #fff !important;
+    }
+</style>
+
+<div class="form-group has-error" style="margin: 0 auto;">
+    <p class="help-block" ng-show="form.email.$error.required && form.password.$error.required && submitted">
+        Please enter your email and password.
+    </p>
+    <p class="help-block" ng-show="form.email.$error.email && submitted">
+        Please enter a valid email.
+    </p>
+
+    <h2 class="help-block">{{ errors.other }}</h2>
+</div>
+
+<div class="myformlogin">
+    <div class="login_form">
+
+        <form name="form" ng-submit="login(form)" novalidate>
+            <input type="hidden" name="_csrf_token" value="" />
+
+            <!--<label  for="username">Login</label>-->
+            <!--<br>-->
+            <input autofocus="" type="text" id="username" name="username" ng-model="user.email" placeholder="Votre Email" required="required" />
+            <br>
+            <!--<label  for="password">Password</label>-->
+            <!--<br>-->
+            <input type="password" id="password" ng-model="user.password"  name="password" placeholder="Votre mot de passe" required="required" />
+            <br>
+            <!--<input type="checkbox" id="remember_me" name="_remember_me" value="on" />-->
+
+            <!--<label for="remember_me">Se souvenir de moi</label>-->
+            <!--<br>-->
+
+
+            <input class="login-connexion" type="submit" id="_submit" name="_submit" value="Connexion" />
+            <!--     <input class="btn-gmp" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+             -->
+        </form>
+    </div>
+</div>

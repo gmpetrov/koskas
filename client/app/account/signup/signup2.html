@@ -1,0 +1,21 @@
+<div class="myformsignup">
+    <div class="signup_form">
+
+        <form name="form" ng-submit="register(form)" novalidate>
+            <input type="hidden" name="_csrf_token" value="" />
+            <input autofocus="" type="text" id="username" name="username" ng-model="user.name" placeholder="Votre Login" required="required" />
+            <br>
+            <input  type="text" id="email" name="email" ng-model="user.email" placeholder="Votre Email" required="required" />
+            <br>
+            <input  type="text" id="adresse" name="adresse" ng-model="user.adresse" placeholder="Votre Adresse" required="required" />
+            <br>
+            <input  type="text" id="company_name" name="company_name" ng-model="user.company_name" placeholder="Nom de la société" required="required" />
+            <br>
+            <input  type="text" id="tva" name="tva" ng-model="user.tva" placeholder="Numero de TVA" required="required" />
+            <br>
+            <input type="password" id="password" ng-model="user.password"  name="password" placeholder="Votre mot de passe" required="required" />
+            <br>
+            <input class="login-connexion" type="submit" id="_submit" name="_submit" value="Vailder" />
+        </form>
+    </div>
+</div>

@@ -1,0 +1,388 @@
+body{
+    font-family: 'Poiret One', cursive;
+}
+
+.nav{
+	width: 100%;
+	height: 100px;
+/*	background-color: #f00;*/
+}
+
+/*forms*/
+.myformlogin,
+.myformsignup{
+    width: 250px;
+    height: 350px;   
+    /*background-color: #f00;*/
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding-top: 45px;
+}
+
+.myformsignup{
+    height: 475px;
+}
+
+#newCommandeModal .modal-content{
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 250px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#new-command .modal-content textarea{
+    border: solid;
+    border-color: #fff;
+}
+
+.commande-submit{
+    border: none;
+    width: 250px;
+    margin-top: 52px;
+    margin-left: -45px;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: rgba(186, 195, 199, 0.4);
+    color: #000;
+    margin-left: -21px;
+}
+
+.commande-submit:hover{
+    background: rgba(39, 155, 97, 0.6);
+    color: #fff;
+}
+
+#username,
+#password,
+#email,
+#adresse,
+#company_name,
+#tva{
+    border: none;
+    color: #fff;
+    background: rgba(0, 0, 0, -0.3);
+    outline: 0;
+    padding-top: 35px;
+    /*margin-left: -52px;*/
+    text-align: center;
+    font-size: 17px;
+}
+
+.login-connexion{
+    border: none;
+    width: 250px;
+    margin-top: 52px;
+    margin-left: -45px;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: rgba(186, 195, 199, 0.4);
+    color: #000;
+}
+.login-connexion:hover{
+    background: rgba(39, 155, 97, 0.6);
+    color: #fff;
+}
+
+/*.btn-gmp{
+    width: 250px;
+    height: 83px;
+    margin-left: -45px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    color: white;
+}
+
+..btn-gmp:hover{
+    background: rgba(39, 155, 97, 0.5);
+}
+*/
+
+.contain-list a:hover{
+    background-color: rgba(39, 155, 97, 0.5);
+    color: white;
+}
+
+.command_form{
+    width: 400px;
+    margin: 0px auto;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding-bottom: 20px;
+}
+
+.command_form label{
+    color: #fff;
+}
+
+.command_form input,
+.command_form textarea
+{
+/*    background: rgba(0, 0, 0, 0.1);
+    color: #fff;*/
+    width: 80%;
+}
+
+.command_form textarea
+{
+    min-height: 200px;
+}
+
+.register_form{
+    width: 160px;
+    margin: 0px auto;
+    text-align: center;
+}
+.register_form form label{
+    color: #fff;
+}
+
+.register_form input{
+    margin-bottom: 14px;
+}
+
+.my-modal{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.login_form{
+    width: 160px;
+    margin: 0px auto;
+    text-align: center;
+}
+.login_form form label{
+    color: #fff;
+}
+
+.login_form input{
+    margin-bottom: 34px;
+}
+
+.signup_form{
+    width: 160px;
+    margin: 0px auto;
+    text-align: center;
+}
+.signup_form form label{
+    color: #fff;
+}
+
+.signup_form input{
+    margin-bottom: 3px;
+}
+
+.label-contain{
+    width: 100%;
+    min-width: 400px;
+    height: auto;
+
+}
+
+#right-label{
+    margin-top: -100px;
+    float: right;
+}
+
+.mylabel{
+	color: #fff;
+	width: 200px;
+	height: 100px;
+	background-color: #000;
+	background: rgba(0, 0, 0, 0.7);
+	padding-top: 20px;
+
+
+}
+
+#register:hover,
+#new-command:hover{
+    background: rgba(39, 155, 97, 0.7);
+    cursor: pointer;
+
+}
+
+.commands{
+    width: 500px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    margin: 10px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+    box-shadow: rgba(0,0,0,.5) 0 1px 5px;
+
+}
+
+
+.contain-list{
+    width: 100%;
+    height: 260px;
+    overflow: scroll;
+}
+
+.list-group
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn-new{
+    width: 250px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mylabel_text{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 30pt;
+}
+
+.mylabel_text2{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20pt;
+}
+
+.red{
+    background-color: rgba(223, 124, 129, 0.5);
+    color: white;
+}
+
+/**************************************/
+
+
+/* background setup */
+.background {
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%9 !important;
+}
+
+/* fullscreen setup */
+html, body {
+    /* give this to all tags from html to .fullscreen */
+    height:100%;
+}
+.fullscreen,
+.content-a {
+    width:100%;
+    min-height:100%;
+}
+.not-fullscreen,
+.not-fullscreen .content-a,
+.fullscreen.not-overflow,
+.fullscreen.not-overflow .content-a {
+    height:100%;
+    overflow:hidden;
+}
+
+/* content centering styles */
+.content-a {
+    display:table;
+}
+.content-b {
+    display:table-cell;
+    position:relative;
+    vertical-align:middle;
+    text-align:center;
+}
+
+/*Panel*/
+#scotch-panel,
+#commande-view{
+    background: #444;
+    color: #fff;
+}
+
+#scotch-panel h1,
+#commande-view h1{
+    text-shadow: 2px 2px #000;
+    font-size: 90px;
+}
+#scotch-panel h2,
+#commande-view h2{
+    text-shadow: 2px 2px #000;
+    margin-top: -13px;
+}
+.panel-container{
+    width: 100%;
+    height: auto;
+}
+
+.panel-container i {
+    color: #fff;
+}
+
+.panel-head{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#panel-body{
+    width: 80%;
+    margin: 0 auto;
+    /*background-color: #f00;*/
+}
+
+#panel-body form{
+    margin: 0 auto;
+}
+
+#new-commande-name,
+#new-commande-description{
+    margin: 0 auto;
+    color: #000;
+    margin-top: 82px;
+    width: 422px;
+    max-width: 80%;
+}
+
+#panel-back-link {
+    /*float: right;*/
+    /*margin-right: 44px;*/
+    /*margin-top: 104px;*/
+    position: absolute;
+    left: 5%;
+    bottom: 50%;
+}
+#panel-back-view {
+    position: absolute;
+    left: 95%;
+    bottom: 50%;
+}
+
+#panel-back-link i:hover,
+#panel-back-view i:hover{
+    color: #279B61;
+}
+
+.div-form{
+    width: 100%;
+    margin: 0 auto;
+    /*background-color: #0f0;*/
+    text-align: center;
+
+}
+
+.unread{
+    background-color: rgba(223, 124, 129, 0.5);
+    color: #fff !important;
+}
+
+.spacer-top{
+    margin-top: 50px;
+}

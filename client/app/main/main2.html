@@ -1,0 +1,68 @@
+    <div class="container">
+    <div id="scotch-panel">
+        <div class="panel-container">
+            <div class="panel-head">
+                <h1>KOSKAS</h1>
+                <h2><label>nouvelle commande</label></h2>
+            </div>
+    
+            <div id="panel-body">
+                <div class="div-form">
+                    <form action="" novalidate>
+                        <input type="text" id="new-commande-name" name="name" ng-model="name"  placeholder="Libellé" required/><br/>
+                        <textarea id="new-commande-description" name="description" ng-model="description"  placeholder="Déscription" required></textarea>
+                        <br/>
+                        <input ng-click="addThing(getCurrentUser())" class="commande-submit toggle-panel" type="submit" name="_submit" value="Envoyer" />
+    
+                    </form>
+                </div>
+            </div>
+            <a id="panel-back-link" href="" class="toggle-panel"><i class="fa fa-arrow-circle-left fa-3x"></i></a>
+        </div>
+    </div>
+
+    <div id="commande-view">
+        <div class="panel-container">
+            <div class="panel-head">
+                <h1>{{ currentThing.name }}</h1>
+                <h2><label>{{ currentThing.description }}</label></h2>
+            </div>
+
+            <!--<div id="panel-body">-->
+
+            <!--</div>-->
+            <!--<a id="panel-back-link" href="" class="toggle-panel"><i class="fa fa-arrow-circle-left fa-3x"></i></a>-->
+            <a id="panel-back-view" href="" ng-click="closePanel()"><i class="fa fa-arrow-circle-right fa-3x"></i></a>
+        </div>
+    </div>
+
+    <a style="text-decoration: none;" href="#" data-toggle="modal" data-target="" class="toggle-panel" >
+        <div id="new-command" class="btn-new">
+            <div class="mylabel_text2">
+                Nouvelle Commande
+            </div>
+        </div>
+    </a>
+
+            <!--<h1 style="color: #fff;">Bonjour {{ getCurrentUser().name }}</h1>-->
+    
+    
+    <!--<a href="#" class="toggle-panel"><i class="fa fa-bars">FUCK</i></a>-->
+    
+    <div class="commands">
+        <div class="list-group">
+            <div class="contain-list">
+                <a class="list-group-item toggle-panel-view" ng-repeat="commande in awesomeThings | orderBy:'date':!reverse" style="border-radius: 0px;" href="#" data-toggle="modal" data-target=""  ng-click="showThing(commande)" ng-class="{ unread : commande.read === false && getCurrentUser().role == 'admin', read : commande.read === true }">{{ commande.name }} | {{ commande.description }} | {{ commande.date | date:'dd/MM/yyyy' }} | {{ commande.user.name }}</a>
+    
+                <!-- Modal -->
+                <div class="modal ade" id="" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="">
+                            {{ commande.description }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
